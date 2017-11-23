@@ -1,0 +1,22 @@
+{{ partial "header" . }}
+
+<div class="fl w-100">
+  {{ partial "subnav" . }}
+  {{/* partial "section-header" . */}}
+  <div class="fl w-100 pa {{ lower .Section }}-bg-color">
+    <h1 class="mh3 mv4 white fw3 ttu tracked f4">{{ humanize .Title }}</h1>
+  </div>
+</div>
+
+<p>{{ .Content }}</p>
+
+<div class="fl w-100 pa5">
+{{ range where .Data.Pages "Type" "updates" }}
+  <div class="fl w-100 pa3 mb3 bg-gray">
+    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    <small>{{ .Date }}</small>
+    <p>{{ .Content }}</p>
+  </div>
+{{ end }}
+</div>
+{{ partial "footer" . }}

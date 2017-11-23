@@ -1,0 +1,25 @@
+<div class="fl w-100 pl3 pv3 bg-white" style="box-shadow: inset 0px 1px 1px 1px rgba( 0, 0, 0, 0.1 );">
+  <ul class="ttu tracked f7">
+  <!-- <li class="fl ph3"><a href="{{/* .Site.BaseURL }}/{{ .Section */}}/">{{ .Section }}</a> ></li> -->
+    {{ $currentNode := . }}
+
+    {{ if .IsPage }}
+      {{ range where .Site.RegularPages "Section" .Section }}
+        {{ $thisNode := . }}
+        <li class="fl pr4 pl1"><a class="no-underline {{ if eq $thisNode $currentNode }} link dim orange {{ else }} link dim black {{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+
+      {{ else }}
+        {{ range where .Data.Pages "Type" .Type }}
+        {{ $thisNode2 := . }}
+          <li class="fl pr4 pl1"><a class="no-underline {{ if eq $thisNode2 $currentNode }} link dim orange {{ else }} link dim black {{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+
+        <!-- this gets all the subsection titles, based on the _index.md file in each section -->
+        {{ range .Sections }}
+            <li class="dib pr4 pl1 cr"><a class="no-underline link dim black" href="{{ .Permalink }}">{{ humanize .Title }}</a></li>
+        {{ end }}
+
+    {{ end }}
+  </ul>
+</div>

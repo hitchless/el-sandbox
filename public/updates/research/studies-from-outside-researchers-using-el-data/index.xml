@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Studies from outside Election Lab on My New Hugo Site</title>
+    <link>http://example.org/updates/research/studies-from-outside-researchers-using-el-data/</link>
+    <description>Recent content in Studies from outside Election Lab on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Nov 2017 20:43:02 -0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/updates/research/studies-from-outside-researchers-using-el-data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

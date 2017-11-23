@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+
+  <body class="debug-grid-16 helvetica">
+    <div class="fl w-100 pv3 ph3 bg-white">
+
+			<div class="fl w-three-quarters w-third-l">
+				<a href="/"><img src="/img/logo-mobile.png" /></a>
+			</div>
+
+      <div class="fl w-three-quarters w-two-thirds-l tr">
+        <ul>
+          {{ range .Site.Sections }}
+            <li class="fr ph3 ttu tracked f7"><a class="no-underline link dim black" href="{{ .Site.BaseURL }}/{{ .Section }}/">{{ humanize .Section }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+
+    </div>

@@ -1,0 +1,10 @@
+{{ partial "header" . }}
+
+{{ range where .Data.Pages "Type" "trees" }}
+  <div class="fl w-100 pa3 mb3 bg-gray">
+    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    <small>{{ .Date }}</small>
+    <p>{{ .Content }}</p>
+  </div>
+{{ end }}
+{{ partial "footer" . }}

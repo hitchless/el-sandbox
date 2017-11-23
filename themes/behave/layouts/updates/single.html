@@ -1,0 +1,18 @@
+{{ partial "header" . }}
+
+<div class="fl w-100">
+  {{ partial "subnav" . }}
+  {{ partial "section-header" . }}
+</div>
+
+<div class="fl w-100 pa5 bg-gray">
+  <small class="db mb2">Published on: {{ .Date }}</small>
+
+  {{ if .Content }}
+    <p>{{ .Content }}</p>
+    {{ else }}
+    <p>sorry no content here</p>
+  {{ end }}
+</div>
+
+{{ partial "footer" . }}

@@ -1,0 +1,47 @@
+{{ partial "header" . }}
+
+<div class="fl w-100">
+  {{ partial "subnav" . }}
+  {{ partial "section-header" . }}
+</div>
+
+<div class="fl w-100 pa5">
+{{ range where .Data.Pages "Type" "guitars" }}
+  <div class="fl w-100 pa3 mb3 bg-gray">
+    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    <small>{{ .Date }}</small>
+    <p>{{ .Content }}</p>
+  </div>
+{{ end }}
+</div>
+{{ partial "footer" . }}
+
+<!-- some code that I might need later ... -->
+
+<ul class="ttu tracked f7">
+<li class="fl ph3"><a href="{{ .Site.BaseURL }}/{{ .Section }}/">{{ .Section }}</a> ></li>
+  {{ $currentNode := . }}
+  {{ with .Site.GetPage "section" "updates" }}
+    {{ $thisNode := . }}
+    <li class="fl pr4 pl1"><a class="no-underline {{ if eq $thisNode $currentNode }} link dim orange {{ else }} link dim black {{ end }}" href="{{ .Permalink }}">{{ .Section }}</a></li>
+  {{ end }}
+
+  {{ if .IsPage }}
+    {{ range where .Site.RegularPages "Section" .Section }}
+      {{ $thisNode := . }}
+      <li class="fl pr4 pl1"><a class="no-underline {{ if eq $thisNode $currentNode }} link dim orange {{ else }} link dim black {{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+
+    {{ range where .Site.GetPage "section" "updates" }}
+      {{ $thisNode := . }}
+      <li class="fl pr4 pl1"><a class="no-underline {{ if eq $thisNode $currentNode }} link dim orange {{ else }} link dim black {{ end }}" href="{{ .Permalink }}">{{ .Section }}</a></li>
+    {{ end }}
+
+    {{ else }}
+      {{ range where .Data.Pages "Type" .Type }}
+      {{ $thisNode2 := . }}
+        <li class="fl pr4 pl1"><a class="white no-underline {{ if eq $thisNode2 $currentNode }} link dim orange {{ else }} link dim black {{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+
+  {{ end }}
+</ul>
