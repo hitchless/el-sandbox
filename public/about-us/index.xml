@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About-us on My New Hugo Site</title>
-    <link>http://example.org/about-us/</link>
-    <description>Recent content in About-us on My New Hugo Site</description>
+    <title>About-us on Eviction Lab Sandbox</title>
+    <link>https://modest-ritchie-0e8120.netlify.com/about-us/</link>
+    <description>Recent content in About-us on Eviction Lab Sandbox</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Nov 2017 20:43:49 -0800</lastBuildDate>
     
-	<atom:link href="http://example.org/about-us/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://modest-ritchie-0e8120.netlify.com/about-us/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Affiliations/Funding</title>
-      <link>http://example.org/about-us/affiliations-funding/</link>
+      <link>https://modest-ritchie-0e8120.netlify.com/about-us/affiliations-funding/</link>
       <pubDate>Sun, 19 Nov 2017 20:43:49 -0800</pubDate>
       
-      <guid>http://example.org/about-us/affiliations-funding/</guid>
+      <guid>https://modest-ritchie-0e8120.netlify.com/about-us/affiliations-funding/</guid>
       <description>Affiliations/Funding &amp;hellip; content here</description>
     </item>
     
     <item>
       <title>Book</title>
-      <link>http://example.org/about-us/book/</link>
+      <link>https://modest-ritchie-0e8120.netlify.com/about-us/book/</link>
       <pubDate>Sun, 19 Nov 2017 20:43:49 -0800</pubDate>
       
-      <guid>http://example.org/about-us/book/</guid>
+      <guid>https://modest-ritchie-0e8120.netlify.com/about-us/book/</guid>
       <description>Book &amp;hellip; content here</description>
     </item>
     
     <item>
       <title>Research Team Bios</title>
-      <link>http://example.org/about-us/research-team-bios/</link>
+      <link>https://modest-ritchie-0e8120.netlify.com/about-us/research-team-bios/</link>
       <pubDate>Sun, 19 Nov 2017 20:43:49 -0800</pubDate>
       
-      <guid>http://example.org/about-us/research-team-bios/</guid>
+      <guid>https://modest-ritchie-0e8120.netlify.com/about-us/research-team-bios/</guid>
       <description>Research Team Bios &amp;hellip; content here</description>
     </item>
     
     <item>
       <title>Web Team Bios</title>
-      <link>http://example.org/about-us/web-team-bios/</link>
+      <link>https://modest-ritchie-0e8120.netlify.com/about-us/web-team-bios/</link>
       <pubDate>Sun, 19 Nov 2017 20:43:49 -0800</pubDate>
       
-      <guid>http://example.org/about-us/web-team-bios/</guid>
+      <guid>https://modest-ritchie-0e8120.netlify.com/about-us/web-team-bios/</guid>
       <description>Web Team Bios &amp;hellip; content here</description>
     </item>
     
