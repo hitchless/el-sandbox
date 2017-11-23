@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://modest-ritchie-0e8120.netlify.com"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Eviction Lab Sandbox"
 theme = "behave"
