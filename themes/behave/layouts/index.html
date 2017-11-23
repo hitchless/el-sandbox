@@ -1,10 +1,17 @@
 {{ partial "header" . }}
 
-{{ range where .Data.Pages "Type" "trees" }}
+{{ range where .Data.Pages "Type" "updates" }}
   <div class="fl w-100 pa3 mb3 bg-gray">
     <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
     <small>{{ .Date }}</small>
     <p>{{ .Content }}</p>
   </div>
 {{ end }}
+
+<ul>
+{{ range .Site.Sections }}
+  <li class="fr ph3 ttu tracked f7"><a class="no-underline link dim black" href="{{ .Site.BaseURL }}/{{ .Section }}/">{{ humanize .Section }}</a></li>
+{{ end }}
+</ul>
+
 {{ partial "footer" . }}
