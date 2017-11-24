@@ -4,14 +4,27 @@
   {{ partial "subnav" . }}
   {{/* partial "section-header" . */}}
   <!-- section header -->
-  <div class="fl w-100 pa {{ lower .Title }}-bg-color">
+  <div class="fl w-100 pa {{ urlize (lower .Title) }}-bg-color">
     <h1 class="mh3 mv4 white fw3 ttu tracked f4">{{ .Title }}</h1>
   </div>
 
 </div>
 
-<div class="fl w-100 pa3 pb4 bg-white">
-    {{ .Content }}
+<!--
+<div class="fl w-100 pa3 mb1 bg-white">
+    {{/* .Content */}}
+</div>
+-->
+
+<div class="fl w-100 alt-rows">
+{{ range where .Site.Pages "Type" (lower .Title) }}
+  <div class="pv4 ph2 bg-white white">
+    <i class="fa fa-chevron-right orange pa2 relative top-1"></i>
+    <a class="no-underline link dim black f4 pl2" href="{{ .Permalink }}">{{ .Title }}</a>
+    <br>
+    <small class="moon-gray ttu tracked fw3 f7 relative left-4">{{ dateFormat "January 2, 2006" .Params.date }}</small>
+  </div>
+{{ end }}
 </div>
 
 {{ partial "footer" . }}

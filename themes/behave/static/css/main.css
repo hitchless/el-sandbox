@@ -22,7 +22,17 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#787eb0', endColorstr='#434878', GradientType=0 );
 }
 
-.events-bg-color, .about-us-bg-color, .city-rankings-bg-color, .learn-more-tell-your-story-bg-color, .help-faq-bg-color, .methods-bg-color, .maps-and-data-bg-color {
+.events-bg-color, /* keep this one here, everything else was put here temporarily */
+.about-us-bg-color,
+.city-rankings-bg-color,
+.learn-more-tell-your-story-bg-color,
+.help-faq-bg-color,
+.methods-bg-color,
+.maps-and-data-bg-color,
+.other-studies-from-eviction-lab-bg-color,
+.studies-from-outside-election-lab-bg-color,
+.updates-bg-color,
+.whats-new-bg-color {
   background: rgba(223,228,231,1);
   background: -moz-linear-gradient(top, rgba(223,228,231,1) 0%, rgba(177,185,190,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223,228,231,1)), color-stop(100%, rgba(177,185,190,1)));
@@ -42,4 +52,8 @@
   background: -ms-linear-gradient(top, rgba(87,190,181,1) 0%, rgba(44,137,128,1) 100%);
   background: linear-gradient(to bottom, rgba(87,190,181,1) 0%, rgba(44,137,128,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57beb5', endColorstr='#2c8980', GradientType=0 );
+}
+
+.alt-rows > div:nth-of-type(odd) {
+    background: #F4F7F9;
 }

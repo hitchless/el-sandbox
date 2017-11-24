@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://modest-ritchie-0e8120.netlify.com/updates/whats-new/blog/test-post4/</loc>
+    <lastmod>2017-11-22T20:43:49-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://modest-ritchie-0e8120.netlify.com/updates/whats-new/blog/test-post3/</loc>
+    <lastmod>2017-11-21T20:43:49-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://modest-ritchie-0e8120.netlify.com/updates/whats-new/blog/test-post2/</loc>
+    <lastmod>2017-11-20T20:43:49-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://modest-ritchie-0e8120.netlify.com/about-us/affiliations-funding/</loc>
     <lastmod>2017-11-19T20:43:49-08:00</lastmod>
   </url>
@@ -28,12 +43,42 @@
   </url>
   
   <url>
+    <loc>https://modest-ritchie-0e8120.netlify.com/updates/events/event3/</loc>
+    <lastmod>2017-11-19T20:43:49-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://modest-ritchie-0e8120.netlify.com/updates/events/event4/</loc>
+    <lastmod>2017-11-19T20:43:49-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://modest-ritchie-0e8120.netlify.com/updates/events/</loc>
     <lastmod>2017-11-19T20:43:49-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://modest-ritchie-0e8120.netlify.com/maps-and-data/ftp-download-site/</loc>
+    <lastmod>2017-11-19T20:43:49-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://modest-ritchie-0e8120.netlify.com/updates/whats-new/media/media1/</loc>
+    <lastmod>2017-11-19T20:43:49-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://modest-ritchie-0e8120.netlify.com/updates/whats-new/media/media2/</loc>
+    <lastmod>2017-11-19T20:43:49-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://modest-ritchie-0e8120.netlify.com/updates/whats-new/media/media3/</loc>
+    <lastmod>2017-11-19T20:43:49-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://modest-ritchie-0e8120.netlify.com/updates/whats-new/media/media4/</loc>
     <lastmod>2017-11-19T20:43:49-08:00</lastmod>
   </url>
   
@@ -141,7 +186,7 @@
   
   <url>
     <loc>https://modest-ritchie-0e8120.netlify.com/</loc>
-    <lastmod>2017-11-19T20:43:49-08:00</lastmod>
+    <lastmod>2017-11-22T20:43:49-08:00</lastmod>
     <priority>0</priority>
   </url>
   
