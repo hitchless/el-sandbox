@@ -4,13 +4,13 @@
     {{ $currentNode := . }}
 
     {{ if .IsPage }}
-      {{ range where .Site.RegularPages "Section" .Section }}
+      {{ range where .Site.RegularPages "Section" . }}
         {{ $thisNode := . }}
         <li class="fl pr4 pl1"><a class="no-underline {{ if eq $thisNode $currentNode }} link dim orange {{ else }} link dim black {{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
       {{ end }}
 
-      {{ else }}
-        {{ range where .Data.Pages "Type" .Type }}
+    {{ else }}
+        {{ range where .Data.Pages "Type" .Section }}
         {{ $thisNode2 := . }}
           <li class="fl pr4 pl1"><a class="no-underline {{ if eq $thisNode2 $currentNode }} link dim orange {{ else }} link dim black {{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
         {{ end }}
