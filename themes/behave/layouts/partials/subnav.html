@@ -4,22 +4,30 @@
     {{ $currentNode := . }}
 
     {{ if .IsPage }}
-      {{ range where .Site.RegularPages "Section" . }}
+      <!-- this catches on FAQ, City Rankings, About sub pages -->
+      {{ range where .Site.RegularPages "Section" .Type }}
         {{ $thisNode := . }}
         <li class="fl pr4 pl1"><a class="no-underline {{ if eq $thisNode $currentNode }} link dim orange {{ else }} link dim black {{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
       {{ end }}
 
     {{ else }}
-        {{ range where .Data.Pages "Type" .Section }}
-        {{ $thisNode2 := . }}
-          <li class="fl pr4 pl1"><a class="no-underline {{ if eq $thisNode2 $currentNode }} link dim orange {{ else }} link dim black {{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
-        {{ end }}
+      <!-- this catches on Methods, Read/Share Stories, FAQ, Rankings, About pages -->
+      {{ range where .Data.Pages "Type" .Section }}
+      {{ $thisNode2 := . }}
+        <li class="fl pr4 pl1"><a class="no-underline {{ if eq $thisNode2 $currentNode }} link dim orange {{ else }} link dim black {{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
 
-        <!-- this gets all the subsection titles, based on the _index.md file in each section -->
-        {{ range .Sections }}
-            <li class="dib pr4 pl1 cr"><a class="no-underline link dim black" href="{{ .Permalink }}">{{ humanize .Title }}</a></li>
-        {{ end }}
+      <!-- this catches on the top level Updates, What's New, Read/Share Stories pages -->
+      {{ range .Sections }}
+          <li class="dib pr4 pl1 cr"><a class="no-underline link dim black" href="{{ .Permalink }}">{{ humanize .Title }}</a></li>
+      {{ end }}
 
     {{ end }}
   </ul>
+<br>
+  <!--
+  <p>type: {{ .Type }}</p>
+  <p>section: {{ .Section }}</p>
+  <p>the dot: {{ . }}</p>
+  -->
 </div>
