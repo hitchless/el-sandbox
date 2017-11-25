@@ -11,7 +11,7 @@
 <p>{{ .Content }}</p>
 
 <div class="fl w-100 pa5">
-{{ range where .Site.Pages "Section" .Section }}
+{{ range where .Data.Pages "Type" .Section }}
   <div class="fl w-100 pa3 mb3 bg-gray">
     <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
     <small>{{ .Date }}</small>
@@ -20,13 +20,57 @@
 {{ end }}
 </div>
 
-.Site.Pages = {{ .Site.Pages }}
-<br>
-.Data.Pages = {{ .Data.Pages }}
-<br>
-.Section = {{ .Section }}
-<br>
-.CurrentSection = {{ .CurrentSection }}
-<br>
+<nav class="sidebar-nav">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a>
+    {{ end }}
+</nav>
+
+<nav class="sidebar-nav">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Identifier }}</a>
+    {{ end }}
+</nav>
+
+<!-- sidebar start -->
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu">
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
+              {{ if .HasChildren }}
+
+            <li class="sub-menu{{if $currentPage.HasMenuCurrent "main" . }} active{{end}}">
+            <a href="javascript:;" class="">
+                {{ .Pre }}
+                <span>{{ .Name }}</span>
+                <span class="menu-arrow arrow_carrot-right"></span>
+            </a>
+            <ul class="sub">
+                {{ range .Children }}
+                <li{{if $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL}}"> {{ .Name }} </a> </li>
+                {{ end }}
+            </ul>
+          {{else}}
+            <li>
+            <a href="{{.URL}}">
+                {{ .Pre }}
+                <span>{{ .Name }}</span>
+            </a>
+          {{end}}
+          </li>
+          {{end}}
+
+        </ul>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+<!--sidebar end-->
+
+{{ partial "debug" . }}
 rendered by = layouts/_default/list.html
+
 {{ partial "footer" . }}
