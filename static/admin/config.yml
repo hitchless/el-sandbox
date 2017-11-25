@@ -16,9 +16,11 @@ collections:
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
   fields: # The fields for each document, usually in front matter
     - {label: "Title", name: "title", widget: "string"}
-    - {label: "Publish Date", name: "date", widget: "datetime"}
-    - {label: "Event Date", name: "date", widget: "datetime"}
+    - {label: "Publish Date", name: "pdate", widget: "datetime"}
+    - {label: "Event Date", name: "edate", widget: "datetime"}
     - {label: "Featured Image", name: "image", widget: "image"}
+    - {label: "Website", name: "website", widget: "string"}
+    - {label: "Address", name: "address", widget: "markdown"}
     - {label: "Body", name: "body", widget: "markdown"}
 
 - name: "blog" # Used in routes, e.g., /admin/collections/blog
