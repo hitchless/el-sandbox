@@ -15,6 +15,7 @@ collections:
   create: true # Allow users to create new documents in this collection
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
   fields: # The fields for each document, usually in front matter
+    - {label: "Child Of", name: "childof", widget: "hidden", default: "events"}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Subtitle", name: "subtitle", widget: "string"}
     - {label: "Publish Date", name: "pdate", widget: "datetime"}
@@ -30,6 +31,7 @@ collections:
   create: true # Allow users to create new documents in this collection
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
   fields: # The fields for each document, usually in front matter
+    - {label: "Child Of", name: "childof", widget: "hidden", default: "blog"}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Publish Date", name: "date", widget: "datetime"}
     - {label: "Featured Image", name: "image", widget: "image"}
@@ -41,6 +43,7 @@ collections:
   create: true # Allow users to create new documents in this collection
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
   fields: # The fields for each document, usually in front matter
+    - {label: "Child Of", name: "childof", widget: "hidden", default: "media"}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Publish Date", name: "date", widget: "datetime"}
     - {label: "Featured Image", name: "image", widget: "image"}
@@ -52,6 +55,7 @@ collections:
   create: true # Allow users to create new documents in this collection
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
   fields: # The fields for each document, usually in front matter
+    - {label: "Child Of", name: "childof", widget: "hidden", default: "research-team-bios"}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Publish Date", name: "date", widget: "datetime"}
     - {label: "Featured Image", name: "image", widget: "image"}
@@ -63,6 +67,7 @@ collections:
   create: true # Allow users to create new documents in this collection
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
   fields: # The fields for each document, usually in front matter
+    - {label: "Child Of", name: "childof", widget: "hidden", default: "web-team-bios"}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Publish Date", name: "date", widget: "datetime"}
     - {label: "Featured Image", name: "image", widget: "image"}
@@ -74,6 +79,7 @@ collections:
   create: true # Allow users to create new documents in this collection
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
   fields: # The fields for each document, usually in front matter
+    - {label: "Child Of", name: "childof", widget: "hidden", default: "audio-visual-stories"}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Publish Date", name: "date", widget: "datetime"}
     - {label: "Featured Image", name: "image", widget: "image"}

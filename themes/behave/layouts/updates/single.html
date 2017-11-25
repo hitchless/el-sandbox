@@ -16,16 +16,7 @@
 
 </div>
 
-.Type = {{ .Type }}
-</br>
-.Site.Pages = {{ .Site.Pages }}
-<br>
-.Data.Pages = {{ .Data.Pages }}
-<br>
-.Section = {{ .Section }}
-<br>
-.CurrentSection = {{ .CurrentSection }}
-<br>
-rendered by = layouts/_default/list.html
+{{ partial "debug" . }}
+rendered by = layouts/_default/single.html
 
 {{ partial "footer" . }}

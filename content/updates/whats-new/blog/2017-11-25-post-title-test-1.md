@@ -1,4 +1,5 @@
 ---
+childof: blog
 title: Post Title Test 1
 date: 2017-11-25T22:01:18.509Z
 image: /images/uploads/mustard-and-chesse.jpg

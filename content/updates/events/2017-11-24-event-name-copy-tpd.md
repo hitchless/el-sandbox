@@ -1,4 +1,5 @@
 ---
+childof: events
 title: Event Name Copy TPD
 subtitle: Line 2
 pdate: 2017-11-25T02:28:22.323Z
