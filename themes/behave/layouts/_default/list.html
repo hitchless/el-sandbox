@@ -11,7 +11,7 @@
 <p>{{ .Content }}</p>
 
 <div class="fl w-100 pa5">
-{{ range where .Data.Pages "Type" "updates" }}
+{{ range where .Site.Pages "Section" .Section }}
   <div class="fl w-100 pa3 mb3 bg-gray">
     <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
     <small>{{ .Date }}</small>
@@ -19,4 +19,14 @@
   </div>
 {{ end }}
 </div>
+
+.Site.Pages = {{ .Site.Pages }}
+<br>
+.Data.Pages = {{ .Data.Pages }}
+<br>
+.Section = {{ .Section }}
+<br>
+.CurrentSection = {{ .CurrentSection }}
+<br>
+rendered by = layouts/_default/list.html
 {{ partial "footer" . }}
