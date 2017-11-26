@@ -3,6 +3,6 @@ childof: web-team-bios
 title: Jonny Miller
 position: CMS Developer
 date: 2017-11-25T02:43:11.505Z
-image: /images/uploads/mustard-and-chesse.jpg
+image: /images/uploads/jonny-miller-bio-pic-02.jpg
 ---
-Lorem ipsum dolor amet etsy chambray fugiat copper mug subway tile nostrud tousled occupy waistcoat slow-carb. Chicharrones hot chicken godard tofu, magna bespoke whatever gochujang tumeric jean shorts ullamco nulla fixie. XOXO waistcoat copper mug eu. Sint voluptate drinking vinegar meh ipsum.
+Jonny brings over 17 years of experience in the fields of web development, design, UI/UX, and project management to the team. Previously he worked with one of western Canada’s largest online education providers, where he was the UI/UX Team Lead, and a web developer Jack-of-all. As the CMS Specialist at Eviction Labs, Jonny is inspired to be working with modern content delivery services such as Netlify and Hugo, and the general world of “JAMstack” architecture. When he’s not slinging ones and zeros, Jonny will most likely be writing a song, or recording, as he is an award winning singer/songwriter in the Southern Gulf Islands of British Columbia, Canada.
