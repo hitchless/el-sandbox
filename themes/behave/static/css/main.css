@@ -57,3 +57,8 @@
 .alt-rows > div:nth-of-type(odd) {
     background: #F4F7F9;
 }
+
+/* do stuff to things inside a rendered content block */
+.page-content p {
+  margin: 2em 0;
+}

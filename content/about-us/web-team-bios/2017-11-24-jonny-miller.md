@@ -1,5 +1,7 @@
 ---
+childof: web-team-bios
 title: Jonny Miller
+position: CMS Developer
 date: 2017-11-25T02:43:11.505Z
 image: /images/uploads/mustard-and-chesse.jpg
 ---

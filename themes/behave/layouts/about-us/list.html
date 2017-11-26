@@ -1,0 +1,42 @@
+{{ partial "header" . }}
+
+<div class="fl w-100">
+  {{ partial "subnav" . }}
+  {{/* partial "section-header" . */}}
+  <div class="fl w-100 pa {{ lower .Section }}-bg-color">
+    <h1 class="mh3 mv4 white fw3 ttu tracked f4">{{ humanize .Title }}</h1>
+  </div>
+</div>
+
+<div class="fl w-100">
+  <div class="page-content">
+    {{ .Content }}
+  </div>
+</div>
+
+<div class="fl w-100">
+{{ range where .Site.RegularPages "Params.childof" (lower .Title | urlize) }}
+  <div class="pv4 ph2 bg-white">
+
+    <!-- the photo -->
+    <div class="fl w-25 pa4">
+      <img src="{{ .Param "image" }}" />
+    </div>
+
+    <div class="fl w-75 pa4">
+      <h2 class="f3">{{ .Title }}</h2>
+      <small class="moon-gray ttu tracked fw3 f7 relative left-4">{{ .Params.position }}</small>
+      <div class="page-content">
+        {{ .Content }}
+      </div>
+    </div>
+
+  </div>
+{{ end }}
+
+</div>
+
+{{ partial "debug" . }}
+rendered by = layouts/about-us/list.html
+
+{{ partial "footer" . }}
