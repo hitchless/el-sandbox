@@ -3,6 +3,10 @@
 
     {{ $currentTitle := .Title }}
 
+   <!-- it seems to me that I should be able to pass the .Section
+        as a variable to the range menus funtion, and only need one
+        condition instead of seven ... but I can't figure it out -->
+
     {{ if eq .Section "updates"}}
       {{ range .Site.Menus.updates }}
         {{ $currentName := .Name }}
