@@ -2,7 +2,7 @@
 childof: events
 title: Event Name Copy TPD
 subtitle: Line 2
-pdate: 2017-11-25T02:28:22.323Z
+date: 2017-11-25T02:28:22.323Z
 edate: 2017-11-28T18:28:22-08:00
 image: /images/uploads/mustard-and-chesse.jpg
 website: 'http://examplewebsite.com'

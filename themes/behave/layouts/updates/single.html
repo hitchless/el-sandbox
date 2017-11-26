@@ -2,17 +2,20 @@
 
 <div class="fl w-100">
   {{ partial "subnav" . }}
-  {{ partial "section-header" . }}
+  {{/* partial "section-header" . */}}
 </div>
 
-<div class="fl w-100 pa5 bg-gray">
-  <small class="db mb2">Published on: {{ .Date }}</small>
+<div class="fl w-100">
 
-  {{ if .Content }}
-    <p>{{ .Content }}</p>
-    {{ else }}
-    <p>sorry no content here</p>
-  {{ end }}
+<figure class="ma0">
+  <img src="{{ .Param "image" }}"/>
+  <figcaption class="pa3 white db fw3" style="margin-top: -120px">
+    <p class="f3 mb4">{{ .Title }}</p>
+    <p class="f7 ttu db mb2 white">{{ .Date.Format "January 2, 2006" }}</p>
+  </figcaption>
+</figure>
+
+<div class="page-content ph3 mw7-l fw3 f4 lh-copy">{{ .Content }}</div>
 
 </div>
 
