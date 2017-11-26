@@ -1,7 +1,7 @@
 ---
 childof: web-team-bios
 title: Jonny Miller
-position: CMS Developer
+position: CMS Specialist
 date: 2017-11-20T18:43:11-08:00
 image: /images/uploads/jonny-miller-bio-pic-02.jpg
 ---

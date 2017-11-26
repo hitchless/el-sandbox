@@ -19,11 +19,12 @@
   <div class="pv4 ph2 bg-white">
 
     <!-- the photo -->
-    <div class="fl w-25 pa4">
+    <div class="fl w-100 w-25-l pa4">
       <img src="{{ .Param "image" }}" />
     </div>
 
-    <div class="fl w-75 pa4">
+    <!-- the text -->
+    <div class="fl w-100 w-75-l pa4">
       <h2 class="f3 fw7 ttu">{{ .Title }}</h2>
       <p class="moon-gray fw3 f4 mv2">{{ .Params.position }}</p>
       <div class="page-content mw7-l fw3 f4 lh-copy">
