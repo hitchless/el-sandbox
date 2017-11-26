@@ -14,9 +14,8 @@
   </div>
 </div>
 
-<div class="fl w-100">
 {{ range where .Site.RegularPages "Params.childof" (lower .Title | urlize) }}
-  <div class="pv4 ph2 bg-white">
+  <div class="fl w-100 pv4 ph2 bg-white">
 
     <!-- the photo -->
     <div class="fl w-100 w-25-l pa4">
@@ -35,7 +34,6 @@
   </div>
 {{ end }}
 
-</div>
 
 {{ partial "debug" . }}
 rendered by = layouts/about-us/list.html
