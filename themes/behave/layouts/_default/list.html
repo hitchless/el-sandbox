@@ -8,7 +8,9 @@
   </div>
 </div>
 
-<p>{{ .Content }}</p>
+<div class="fl w-100 pa3 page-content">
+{{ .Content }}
+</div>
 
 <div class="fl w-100 alt-rows">
 {{ range where .Site.RegularPages "Params.childof" (lower .Title | urlize) }}
@@ -23,6 +25,6 @@
 </div>
 
 {{ partial "debug" . }}
-rendered by = layouts/_default/list.html
+<span class="debug-visability">rendered by = themes/THEMENAME/layouts/_default/list.html</span>
 
 {{ partial "footer" . }}
